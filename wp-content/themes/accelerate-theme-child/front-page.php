@@ -13,6 +13,7 @@
  */
 
 get_header(); ?>
+
 <section class="home-page">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -29,7 +30,7 @@ get_header(); ?>
 		<h4>Featured Work</h4>
 		
 		<ul class="homepage-featured-work">
-		<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
+		<?php query_posts('posts_per_page=3&post_type=case_studies&order=ASC'); ?>
       		<?php while ( have_posts() ) : the_post(); 
       			$image_1 = get_field("image_1");
       			$size = "medium";

@@ -51,3 +51,13 @@ function reverse_archive_order( $query ){
 }
 
 add_action( 'pre_get_posts', 'reverse_archive_order' );
+
+
+function accelerate_theme_child_support() {
+
+  // post thumbnails and images
+  add_theme_support('post-thumbnails');
+  add_image_size('archive-case-studies', 514, 379, array( 'left', 'top' ) ); 
+  }
+
+add_action( 'after_setup_theme', 'accelerate_theme_child_support' );

@@ -156,15 +156,20 @@ label {
     font-size: smaller;
 }
 
-input#nf-field-1 {
-    float: left;
-}
-
-input#nf-field-2 {
-    float: left;
-}
-
 input#nf-field-4 {
     float: right;
     background: none repeat scroll 0 0 #45ac9d;
+    color: white;
+}
+
+div#content {
+    width: 70%;
+    
+}
+
+/* 404 page */
+body.error404 {
+    background: #150300;
+    color: #3b3b3b;
+    font: 17px/1.65 'open sans', Arial, sans-serif;
 }
